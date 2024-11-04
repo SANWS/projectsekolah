@@ -1,0 +1,324 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Atur konten secara vertikal */
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #FF6500;
+    padding: 10px 0;
+    width: 100%;
+    position: fixed; /* Navbar tetap di atas */
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-item {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.nav-item:hover {
+    background-color: #EC8305;
+}
+
+.nav-item.active {
+    background-color: #EC8305;
+}
+
+.nav-index {
+    background-color: orange;
+    color: #f0f4f8;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.nav-index:hover {
+    background-color: #EC8305;
+}
+
+.nav-index.active {
+    background-color: #EC8305;
+}
+
+.container {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+    margin-top: 80px; 
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+}
+
+.language-selector {
+    margin-bottom: 20px;
+}
+
+#language {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+.checkboxes {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#generate-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#generate-button:hover {
+    background-color: #0056b3;
+}
+
+.result {
+    margin-top: 20px;
+    padding: 10px;
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    min-height: 50px;
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #888;
+    font-size: 14px;
+}
+
+.hiragana-group {
+    margin: 20px 0;
+}
+
+.hiragana-set {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    justify-items: center;
+}
+
+.hiragana-item {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    line-height: 1.5;
+}
+
+.latin {
+    font-size: 0.8em;
+    color: #888;
+}
+
+.katakana-group {
+    margin: 20px 0;
+}
+
+.katakana-set {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    justify-items: center;
+}
+
+.katakana-item {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    line-height: 1.5;
+}
+
+.latin {
+    font-size: 0.8em;
+    color: #888;
+}
+
+/* Ikon info di samping judul */
+.info-icon {
+    margin-left: 10px;
+    font-size: 20px;
+    color: #007bff;
+    cursor: pointer;
+    position: relative; /* Make sure the tooltip is positioned relative to the icon */
+}
+
+.tooltip {
+    display: none; /* Initially hidden */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #666363da;
+    color: #fff;
+    padding: 5px;
+    border-radius: 4px;
+    font-size: 14px;
+    white-space: nowrap;
+    z-index: 1000;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.info-icon.active + .tooltip {
+    display: block;
+    animation: fadeIn 0.3s forwards;
+}
+
+.tooltip.hidden {
+    animation: fadeOut 0.3s forwards;
+}
+
+/* Keyframes for tooltip animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+}
+
+
+/* QUESTION CSS */
+
+#character-display {
+    font-size: 48px;
+    color: #007bff;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+#options-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.option-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 18px;
+}
+
+.option-btn:hover {
+    background-color: #0056b3;
+}
+
+.option-btn:active {
+    transform: scale(0.98);
+}
+
+#next-question {
+    margin-top: 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#next-question:hover {
+    background-color: #218838;
+}
+
+#next-question:active {
+    transform: scale(0.98);
+}
+
+#feedback {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #d9534f; 
+}
+
+#feedback.correct {
+    color: #28a745; 
+}
+
+.hidden {
+    display: none;
+}
+
+#countdown {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+.question-type-selector {
+    margin-bottom: 20px;
+}
+
+#question-type {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}

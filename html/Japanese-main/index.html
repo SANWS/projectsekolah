@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiragana Random Generator</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <nav class="navbar">
+        <a href="index.html" class="nav-item" id="nav-random-generator">Random Generator</a>
+        <a href="html/hiragana.html" class="nav-item" id="nav-hiragana">Hiragana</a>
+        <a href="html/katakana.html" class="nav-item" id="nav-katakana">Katakana</a>
+        <a href="html/question.html" class="nav-item" id="nav-random-question">Random Question</a>
+        <a href="../../index.html" class="nav-index" id="nav-balik">Main Page</a>
+    </nav>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>
+            Random Generator
+            <i class="fas fa-info-circle info-icon" aria-hidden="true"></i>
+            <span class="tooltip"> 
+                Dengan Random Generator ini, Anda bisa menghafal <br>
+                Hiragana lebih efektif. <br>
+                Teknik ini menghasilkan karakter secara acak <br>
+                dari grup yang tersedia untuk latihan menulis.</span>
+        </h1>
+                <div class="language-selector">
+            <label for="language">Select Language:</label>
+            <select id="language">
+                <option value="en">Japanese</option>
+                <option value="id">Bahasa Indonesia</option>
+            </select>
+        </div>
+        <div class="checkboxes">
+            <h2>Select Groups</h2>
+            <form id="checkbox-form">
+                <label><input type="checkbox" name="group" value="a" checked> あ (a)</label>
+                <label><input type="checkbox" name="group" value="ka" checked> か (ka)</label>
+                <label><input type="checkbox" name="group" value="sa" checked> さ (sa)</label>
+                <label><input type="checkbox" name="group" value="ta" checked> た (ta)</label>
+                <label><input type="checkbox" name="group" value="na" checked> な (na)</label>
+                <label><input type="checkbox" name="group" value="ha" checked> は (ha)</label>
+                <label><input type="checkbox" name="group" value="ma" checked> ま (ma)</label>
+                <label><input type="checkbox" name="group" value="ya" checked> や (ya)</label>
+                <label><input type="checkbox" name="group" value="ra" checked> ら (ra)</label>
+                <label><input type="checkbox" name="group" value="wa" checked> わ (wa)</label>
+            </form>
+        </div>
+        <button id="generate-button">Generate Hiragana</button>
+        <div id="result" class="result"></div>
+    </div>
+
+    <footer>
+        <p>Version: 1.0.2</p>
+        <p>Created by: Akbar Pacarnya mba T</p>
+        <p>&copy; 2024 Akbar. All rights reserved.</p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Japanese Character Quiz</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <nav class="navbar">
+        <a href="../index.html" class="nav-item" id="nav-random-generator">Random Generator</a>
+        <a href="hiragana.html" class="nav-item" id="nav-hiragana">Hiragana</a>
+        <a href="katakana.html" class="nav-item" id="nav-katakana">Katakana</a>
+        <a href="question.html" class="nav-item" id="nav-random-question">Random Question</a>
+        <a href="../../../index.html" class="nav-index" id="nav-balik">Main Page</a>
+    </nav>
+</head>
+<body>
+    <div class="container">
+        <h1>Random Japanese Character Quiz</h1>
+        <div class="language-selector">
+            <label for="character-type">Character Type:</label>
+            <select id="character-type" class="language">
+                <option value="hiragana">Hiragana</option>
+                <option value="katakana">Katakana</option>
+            </select>
+        </div>
+        <div class="language-selector">
+            <label for="question-type">Question Type:</label>
+            <select id="question-type" class="language">
+                <option value="romaji">Romaji</option>
+                <option value="hiragana">Hiragana</option>
+            </select>
+        </div>
+        <div id="question-container">
+            <p id="question-text">Apa romaji dari hiragana ini?</p>
+            <div id="character-display"></div>
+            <div id="options-container">
+                <button class="option-btn" id="option1"></button>
+                <button class="option-btn" id="option2"></button>
+                <button class="option-btn" id="option3"></button>
+            </div>
+        </div>
+        <button id="next-question">Next Question</button>
+        <p id="feedback" class="hidden"></p>
+        <p id="countdown"></p>
+    </div>
+    <script src="../js/question.js"></script>
+</body>
+<footer>
+    <p>Version: 1.0.2</p>
+    <p>Created by: Akbar Pacarnya mba T</p>
+    <p>&copy; 2024 Akbar. All rights reserved.</p>
+</footer>
+</html>
