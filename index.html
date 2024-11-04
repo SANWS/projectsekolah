@@ -1,144 +1,662 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>School Project</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>School Team Project</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo/favicon.png" rel="icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="css/main.css" rel="stylesheet">
 </head>
-<body>
-    <nav>
-        <div class="wrapper">
-            <div class="logo"><a href=''>School Project</a></div>
-            <div class="menu">
-                <a href="#" class="tombol-menu">
-                    <span class="garis"></span>
-                    <span class="garis"></span>
-                    <span class="garis"></span>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <h1 class="sitename">School Team Project</h1>
+      </a>
+
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#future">Future</a></li>
+          <li><a href="#project">Project</a></li>
+          <li><a href="#team">Our team</a></li>        
+          <li><a href="#supports">Supports</a></li>
+          <li class="dropdown"><a href="team.html"><span>We Are</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#akbar">Akbar</a></li>
+              <li><a href="#taqiyyah">Taqiyyah</a></li>
+              <li><a href="#adit">Adit</a></li>
+              <li><a href="#banu">Banu</a></li>
+              <li><a href="#tama">Tama</a></li>
+            </ul>
+          </li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="starter-page.html">Get Started</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- home Section -->
+    <section id="home" class="home section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="home-content" data-aos="fade-up" data-aos-delay="200">
+              <div class="company-badge mb-4">
+                <i class="bi bi-gear-fill me-2"></i>
+                Bersatu Kuat!
+              </div>
+
+              <h1 class="mb-4">
+                School Team <br>
+                Project <br>
+                <span class="accent-text">Kolaborasi Kreatif</span>
+              </h1>
+
+              <p class="mb-4 mb-md-5">
+                <b>School Team Project</b> adalah kolaborasi siswa untuk menciptakan solusi inovatif, meningkatkan keterampilan, dan membangun kerja sama dalam mencapai tujuan bersama.
+              </p>
+
+              <div class="home-buttons">
+                <a href="starter-page.html" class="btn btn-primary me-0 me-sm-2 mx-1">Get Started</a>
+                <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="btn btn-link mt-2 mt-sm-0 glightbox">
+                  <i class="bi bi-play-circle me-1"></i>
+                  Play Video
                 </a>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#About">About</a></li>
-                    <li><a href="#team">Team</a></li>
-                    <li><a href="#mentorship">Mentorship </a></li>
-                    <li><a href="#contact">Contact</a></li>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="home-image" data-aos="zoom-out" data-aos-delay="300">
+              <img src="assets/img/logo/illustration-1.png" alt="home Image" class="img-fluid">
+            </div>
+          </div>
+        </div>
+
+        <div class="row stats-row gy-4 mt-5" data-aos="fade-up" data-aos-delay="500">
+          <div class="col-lg-3 col-md-6">
+            <div class="stat-item">
+              <div class="stat-icon">
+                <i class="bi bi-person-workspace"></i>
+              </div>
+              <div class="stat-content">
+                <h4>Teamwork Skills</h4>
+                <p class="mb-0">Meningkatkan kerja sama</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="stat-item">
+              <div class="stat-icon">
+                <i class="bi bi-alarm"></i>
+              </div>
+              <div class="stat-content">
+                <h4>Project Management</h4>
+                <p class="mb-0">Mengasah manajemen waktu</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="stat-item">
+              <div class="stat-icon">
+                <i class="bi bi-graph-up"></i>
+              </div>
+              <div class="stat-content">
+                <h4>Creative Thinking</h4>
+                <p class="mb-0">Memperkuat inovasi ide</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="stat-item">
+              <div class="stat-icon">
+                <i class="bi bi-terminal-dash"></i>
+              </div>
+              <div class="stat-content">
+                <h4>Problem Solving</h4>
+                <p class="mb-0">Meningkatkan analisis masalah</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /home Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 align-items-center justify-content-between">
+
+          <div class="col-xl-5" data-aos="fade-up" data-aos-delay="200">
+            <span class="about-meta">MORE ABOUT US</span>
+            <h2 class="about-title">School Team Project</h2>
+            <p class="about-description">School Team Project adalah kolaborasi siswa untuk merancang, mengembangkan, dan menyelesaikan proyek, meningkatkan keterampilan, kreativitas, dan kemampuan berpikir kritis, sambil mendorong kerja tim dan komunikasi yang efektif.</p>
+
+            <div class="row feature-list-wrapper">
+              <div class="col-md-6">
+                <ul class="feature-list">
+                  <li><i class="bi bi-check-circle-fill"></i> Kerja sama efektif</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Kreativitas meningkat</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Keterampilan komunikasi</li>
                 </ul>
+              </div>
+              <div class="col-md-6">
+                <ul class="feature-list">
+                  <li><i class="bi bi-check-circle-fill"></i> Manajemen waktu</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Rasa percaya diri</li>
+                  <li><i class="bi bi-check-circle-fill"></i> Penyelesaian masalah</li>
+                </ul>
+              </div>
             </div>
+
+            <div class="info-wrapper">
+              <div class="row gy-4">
+                <div class="col-lg-5">
+                  <div class="profile d-flex align-items-center gap-3">
+                    <img src="assets/img/team/avatar-1.webp" alt="CEO Profile" class="profile-image">
+                    <div>
+                      <h4 class="profile-name">Akbar</h4>
+                      <p class="profile-position">Penanggung jawab</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-7">
+                  <div class="contact-info d-flex align-items-center gap-2">
+                    <i class="bi bi-telephone-fill"></i>
+                    <div>
+                      <p class="contact-label">Call us anytime</p>
+                      <p class="contact-number">@Akbar_lipz</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="image-wrapper">
+              <div class="images position-relative" data-aos="zoom-out" data-aos-delay="400">
+                <img src="assets/img/about/about1.avif" alt="Business Meeting" class="img-fluid main-image rounded-4">
+                <img src="assets/img/about/about2.avif" alt="Team Discussion" class="img-fluid small-image rounded-4">
+              </div>
+            </div>
+          </div>
         </div>
-    </nav>
-    <div class="wrapper">
-        <!-- untuk home -->
-        <section id="home">
-            <img src="https://img.freepik.com/premium-vector/diverse-group-colleagues-engages-collaborative-discussion-startup-meeting-colleagues-coworking-startup-meeting-discussing-working-together-as-team-flat-illustration_585735-39014.jpg?ga=GA1.1.266496041.1730108298&semt=ais_hybrid"/>
-            <div class="kolom">
-                <p class="deskripsi">School Team Project</p>
-                <h2>Semangat dan energik!</h2>
-                <p>Kolaborasi kreatif, inovasi teknologi, membangun masa depan yang cerah.</p>
-                <p><a href="" class="tbl-biru">Pelajari Lebih Lanjut</a></p>
-            </div>
-        </section>
 
-        <!-- untuk courses -->
-        <section id="About">
-            <div class="kolom">
-                <p class="deskripsi">Unlock Your Potential</p>
-                <h2>Description</h2>
-                <p>School Project hadir untuk menampilkan perjalanan dan karya kami. Melalui biografi dan portofolio, kami berbagi inspirasi serta pengalaman unik.</p>
-                <p>Dengan proyek ini, kami menunjukkan kemampuan dan dedikasi kami di dunia teknologi. Setiap proyek menggambarkan usaha keras dan kreativitas kami.</p>
-                <p><a href="" class="tbl-biru">Pelajari Lebih Lanjut</a></p>
-            </div>
-            <img src="https://img.freepik.com/premium-vector/group-people-working-together-laptop_1319560-45758.jpg?ga=GA1.1.266496041.1730108298&semt=ais_hybrid" class="flip-image"/>
-        </section>
+      </div>
 
-        <!-- untuk team -->
-        <section id="team">
-            <div class="tengah">
-                <div class="kolom">
-                    <p class="deskripsi"></p>
-                    <h2>School Project Team</h2>
-                    <p class="deskripsitim">Tim kami membuat website portofolio untuk mengenalkan diri secara profesional</p>
-                </div>
+    </section><!-- /About Section -->
 
-                <div class="tutor-list">
-                    <div class="kartu-tutor">
-                        <img src=""/>
-                        <h1>Fadhli Muhammad Akbar</h1>
-                        <p1>Peran: Programmer, Design Lead</p1>
-                    </div>
-                    <div class="kartu-tutor">
-                        <img src=""/>
-                        <h1>Rafi Aditya Prima</h1>
-                        <p1>Peran: Assistant, UI/UX Designer</p1>
-                    </div>
-                    <div class="kartu-tutor">
-                        <img src=""/>
-                        <h1>Taqiyyah Muthi Rafifa</h1>
-                        <p1>Peran: Project Design, Planning</p1>
-                    </div>
-                    <div class="kartu-tutor">
-                        <img src=""/>
-                        <h1>Banu Khansa Aguska</h1>
-                        <p1>Peran: Assistant, Tester</p1>
-                    </div>
-                    <div class="kartu-tutor">
-                        <img src=""/>
-                        <h1>Muhammad Titris Pratama</h1>
-                        <p1>Peran: Assistant, Tester</p1>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <!-- future Section -->
+    <section id="future" class="future section">
 
-        <!-- untuk mentorship -->
-        <section id="mentorship">
-            <div class="tengah">
-                <div class="kolom">
-                    <p class="deskripsi"></p>
-                    <h2>Mentorship</h2>
-                    <p>Kami mengucapkan terima kasih kepada mentorship yang telah memberikan bimbingan, dukungan, dan inspirasi dalam menjalani setiap langkah proyek ini.</p>
-                </div>
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Future</h2>
+        <p>"School Team Project akan berkembang dan menciptakan solusi inovatif untuk semua"</p>
+      </div><!-- End Section Title -->
 
-                <div class="mentorship-list">
-                    <div class="kartu-mentorship">
-                        <img src="https://media.cakeresume.com/image/upload/s--7TW2xwhj--/c_pad,fl_png8,h_200,w_200/v1661538669/h4bow7dgqnapyeyz6rl5.png"/>
-                    </div>
-                    <div class="kartu-mentorship">
-                        <img src="https://i.ibb.co.com/H7TXnhB/453521534-506081425212847-8486291533302522321-n.jpg"/>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
+      <div class="container">
 
-    <div id="contact">
-        <div class="wrapper">
-            <div class="footer">
-                <div class="footer-section">
-                    <h3>School Project</h3>
-                    <p>Inovasi kreatif yang dikembangkan oleh tim untuk pendidikan</p>
-                </div>
-                <div class="footer-section">
-                    <h3>About</h3>
-                    <p>Tentang tim kami dan proyek yang kami kembangkan bersama</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Contact</h3>
-                    <p>School Team Project</p>
-                    <p></p>
-                </div>
-                <div class="footer-section">
-                    <h3>Social</h3>
-                    <p><b>Instagram: </b>twlvexpone_ofc</p>
-                </div>
-            </div>
+        <div class="d-flex justify-content-center">
+
+          <ul class="nav nav-tabs" data-aos="fade-up" data-aos-delay="100">
+
+            <li class="nav-item">
+              <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#future-tab-1">
+                <h4>Apa</h4>
+              </a>
+            </li><!-- End tab nav item -->
+
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#future-tab-2">
+                <h4>Why</h4>
+              </a><!-- End tab nav item -->
+
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#future-tab-3">
+                <h4>How</h4>
+              </a>
+            </li><!-- End tab nav item -->
+
+          </ul>
+
         </div>
+
+        <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="tab-pane fade active show" id="future-tab-1">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+                <h3>Apa itu School Team Project?</h3>
+                <p class="fst-italic">
+                  <b>School Team Project</b> berfokus pada pengembangan keterampilan teknis dan non-teknis yang diperlukan untuk menghadapi tantangan di dunia nyata. 
+                  <p>Proyek ini sering kali melibatkan berbagai bidang, seperti teknologi, seni, dan ilmu pengetahuan, yang memungkinkan siswa untuk belajar dari satu sama lain dan mendapatkan wawasan baru. 
+                    Dengan pengalaman ini, siswa tidak hanya siap menghadapi tantangan akademis, tetapi juga mendapatkan keterampilan yang berharga untuk karier mereka di masa depan.</p>
+                </p>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="assets/img/features/features-illustration-1.avif" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End tab content item -->
+
+          <div class="tab-pane fade" id="future-tab-2">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+                <h3>seberapa penting project ini?</h3>
+                <p class="fst-italic">
+                  Dengan semua manfaat tersebut, School Team Project menjadi platform yang efektif untuk mempersiapkan siswa menghadapi tantangan di masa depan.
+                </p>
+                <ul>
+                  <li><i class="bi bi-check2-all"></i> <span><b>Pengembangan Keterampilan Kolaboratif:</b> Proyek ini membantu siswa belajar bekerja sama dalam tim, yang merupakan keterampilan esensial di dunia kerja.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span><b>Penerapan Pengetahuan Praktis:</b> Melalui proyek ini, siswa dapat menerapkan teori yang mereka pelajari di kelas dalam situasi nyata.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span><b>Membangun Rasa Tanggung Jawab:</b> Dengan terlibat dalam proyek tim, siswa merasa lebih bertanggung jawab terhadap kontribusi mereka.</span></li>
+                  <li><i class="bi bi-check2-all"></i> <span><b>Kreativitas dan Inovasi:</b> School Team Project mendorong siswa untuk berpikir kreatif dan menemukan solusi baru untuk tantangan yang dihadapi.</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="assets/img/features/features-illustration-2.avif" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End tab content item -->
+
+          <div class="tab-pane fade" id="future-tab-3">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+                <h3>Kenapa bisa tercipta</h3>
+                <p class="fst-italic">
+                <b>School Team Project</b> tercipta sebagai respon terhadap kebutuhan pendidikan yang lebih interaktif dan kolaboratif. Dalam era di mana pembelajaran tidak hanya berfokus pada teori, proyek ini menawarkan siswa kesempatan untuk bekerja sama dalam tim, mengasah keterampilan komunikasi, dan belajar dari pengalaman satu sama lain. Proyek ini juga muncul dari dorongan siswa untuk memberikan dampak positif kepada komunitas mereka. Dengan melibatkan diri dalam inisiatif yang bermanfaat, siswa dapat merasakan kepuasan dari kontribusi yang mereka buat, sekaligus mengembangkan rasa empati terhadap orang lain.
+                </p>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="assets/img/features/features-illustration-3.webp" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End tab content item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /future Section -->
+
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1" class="purecounter"></span>
+              <p>On Project</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="14" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Projects Finish</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="750" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Hours Of Build</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item text-center w-100 h-100">
+              <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Team</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Stats Section -->
+
+    <!--  Our Project Section -->
+    <section id="project" class="project section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Our Project</h2>
+        <p>"Kami memperkenalkan proyek-proyek yang telah kami buat, berdasarkan pengalaman dan proses belajar yang telah kami jalani"</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-4">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-card d-flex">
+              <div class="icon flex-shrink-0">
+                <i class="bi bi-translate"></i>
+              </div>
+              <div>
+                <h3>Japaneses Edu</h3>
+                <p>Ini adalah proyek pertama kami untuk memperkenalkan bahasa Jepang, dengan fitur menarik seperti chart hiragana, chart katakana, serta fitur untuk mengacak hiragana. Hal ini memudahkan pengguna untuk menghafal huruf-huruf tersebut saat belajar</p>
+                <a href="html/Japanese-main/index.html" target="_blank" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div><!-- End Service Card -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="project-card d-flex">
+              <div class="icon flex-shrink-0">
+                <i class="bi bi bi-fire"></i>
+              </div>
+              <div>
+                <h3>Fireworks</h3>
+                <p>Fireworks are explosive devices that create colorful displays of light and sound, commonly used in celebrations and festivities worldwide
+                </p>
+                <a href="service-details.html" target="_blank" class="read-more">Read More <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div><!-- End Service Card -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Our Project Section -->
+
+    <!-- Call To Start Section -->
+    <section id="Start" class="Start section dark-background">
+
+      <div class="container">
+        <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-xl-10">
+            <div class="text-center">
+              <h3>Start Explore</h3>
+              <a class="cta-btn" href="#">Start Explore</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- Start Section -->
+    <!-- Team Section -->
+    <section id="team" class="team section light-background">
+
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+          <h2>Our Team</h2>
+          <p>"Tim kami berdedikasi, kreatif, dan siap menghadapi berbagai tantangan"</p>
+        </div><!-- End Section Title -->
+        <!-- Container 1-->
+        <div class="container">
+          <div class="row g-5">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="member1" id="membertengah">
+                <img src="assets/img/team/avatar-1.webp" class="testimonial-img" alt="">
+                <h3>Fadhli Muhammad Akbar</h3>
+                <h4>Programmer &amp; Lead Design</h4>
+                <div class="social">
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href=""> <i class="bi bi-whatsapp"></i> </a>
+                </div>
+                <p>
+                  <i class=""></i>
+                  <span>"Kami merasa sangat bangga bisa mempersembahkan proyek ini, hasil dari kerja keras dan kolaborasi yang membawa kami pada pengalaman baru"</span>
+                  <i class=""></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+        </div>
+        <!-- container 2-->
+        <div class="container">
+          <div class="row g-5">
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="member">
+                <img src="assets/img/team/avatar-2.webp" class="testimonial-img" alt="">
+                <h3>Taqiyyah Muthi Rafifah</h3>
+                <h4>Asisstant &amp; Data analyst</h4>
+                <div class="social">
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href=""> <i class="bi bi-whatsapp"></i> </a>
+                </div>
+                <p>
+                  <i class=""></i>
+                  <span>"Menciptakan proyek ini mengajarkan kami untuk menghargai proses, belajar hal baru, dan berkontribusi dengan cara yang positif"</span>
+                  <i class=""></i>
+                </p>
+              </div>
+            </div><!-- End testimonial item -->
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="member">
+                <img src="assets/img/team/avatar-3.webp" class="testimonial-img" alt="">
+                <h3>Rafi Aditya Prima</h3>
+                <h4>Asisstant Design &amp; Tester</h4>
+                <div class="social">
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href=""> <i class="bi bi-whatsapp"></i> </a>
+                </div>
+                <p>
+                  <i class=""></i>
+                  <span>"Kami berharap proyek ini dapat bermanfaat bagi orang lain, menjadi inspirasi, dan menunjukkan kemampuan serta dedikasi kami"</span>
+                  <i class=""></i>
+                </p>
+              </div>
+            </div><!-- End Team item -->
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="member">
+                <img src="assets/img/team/avatar-4.webp" class="testimonial-img" alt="">
+                <h3>Banu Khansa Aguska</h3>
+                <h4>Asisstant &amp; Tester &amp; Data analyst</h4>
+                <div class="social">
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href=""> <i class="bi bi-whatsapp"></i> </a>
+                </div>
+                <p>
+                  <i class=""></i>
+                  <span>"Proyek ini bukan sekadar karya, tetapi simbol dari perjalanan kami dalam belajar, mengatasi tantangan, dan menghasilkan sesuatu yang bermakna"</span>
+                  <i class=""></i>
+                </p>
+              </div>
+            </div><!-- End Team item -->
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="member">
+                <img src="assets/img/team/avatar-5.webp" class="testimonial-img" alt="">
+                <h3>Muhammad Titris Pratama</h3>
+                <h4>Asisstant &amp; Tester &amp; Data analyst</h4>
+                <div class="social">
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <a href=""> <i class="bi bi-whatsapp"></i> </a>
+                </div>
+                <p>
+                  <i class=""></i>
+                  <span>"Proyek ini adalah pencapaian besar bagi kami, mencerminkan usaha, kreativitas, dan semangat untuk belajar sambil menciptakan sesuatu yang bermanfaat"</span>
+                  <i class=""></i>
+                </p>
+              </div>
+            </div><!-- End Team item -->
+
+          </div>
+        </section><!-- /Team Section -->
+        <!-- support Section -->
+  <section id="supports" class="supports section">
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Acknowledging the contributions of</h2>
+        <p>"Thank you for your unwavering supports and encouragement throughout this journey."</p>
+      </div><!-- End Section Title -->
+      <div class="swiper init-swiper">
+        <script type="application/json" class="swiper-config">
+          {
+            "loop": true,
+            "speed": 600,
+            "autoplay": {
+              "delay": 5000
+            },
+            "slidesPerView": "auto",
+            "pagination": {
+              "el": ".swiper-pagination",
+              "type": "bullets",
+              "clickable": true
+            },
+            "breakpoints": {
+              "320": {
+                "slidesPerView": 2,
+                "spaceBetween": 40
+              },
+              "480": {
+                "slidesPerView": 3,
+                "spaceBetween": 60
+              },
+              "640": {
+                "slidesPerView": 4,
+                "spaceBetween": 80
+              },
+              "992": {
+                "slidesPerView": 6,
+                "spaceBetween": 120
+              }
+            }
+          }
+        </script>
+        <div class="swiper-wrapper align-items-center">
+          <div class="swiper-slide"><img src="assets/img/supports/s-1.png" class="img-fluid" alt=""></div>
+          <div class="swiper-slide"><img src="assets/img/supports/s-2.jpeg" class="img-fluid" alt=""></div>
+          <div class="swiper-slide"><img src="assets/img/supports/s-3.webp" class="img-fluid" alt=""></div>
+          <div class="swiper-slide"><img src="assets/img/supports/s-4.webp" class="img-fluid" alt=""></div>
+          <div class="swiper-slide"><img src="assets/img/supports/s-5.png" class="img-fluid" alt=""></div>
+          <div class="swiper-slide"><img src="assets/img/supports/s-6.png" class="img-fluid" alt=""></div>
+
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
     </div>
 
-    <div id="copyright">
-        <div class="wrapper">
-            &copy; 2024 School Project Team. All Rights Reserved.      </div>
+  </section><!-- /supports Section -->
+        </div>
+  </main> 
+
+  <footer id="footer" class="footer">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">School Team Project</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>B9 N123, Jln merdeka raya</p>
+            <p>Indonesia, Jakarta</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+62 8123 4567 8910</span></p>
+            <p><strong>Email:</strong> <span>SchoolTeamProject@outlook.com</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+
+            <!--
+                      <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#future">Future</a></li>-->
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About us</a></li>
+            <li><a href="#future">Future</a></li>
+            <li><a href="#team">Our team</a></li>
+            <li><a href="#supports">Thanks to</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
-    
+
+    <div class="container copyright text-center mt-4">
+      <p>&copy;<span>2024</span> <strong class="px-1 sitename">SchoolTeamProject. </strong> <span>All Rights Reserved.</span></p>
+      <div class="credits">
+        Your assistance is greatly appreciated | Designed by <a href="https://bootstrapmade.com/" target="_blank">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+ 
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+
+  <!-- Main JS File -->
+  <script src="js/main.js"></script>
+
 </body>
+
 </html>
